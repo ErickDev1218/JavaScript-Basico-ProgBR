@@ -1,8 +1,8 @@
 // Agora que ja entendemos o condicinal de 'if e else', vamos partir para o laço condicional switch. Vejamos o caso a seguir:
 
 
-var nota1 = 0
-var nota2 = 0
+var nota1 = 9
+var nota2 = 9
 
 var conceito = "" //Aqui eu declarei uma váriavel vazia!
 
