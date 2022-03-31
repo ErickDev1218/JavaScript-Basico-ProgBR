@@ -86,12 +86,14 @@ var aluno2 = {
 var aluno3 = {
     nome:"Kartylla",
     notas:[8,9],
-    media: calcMedia
+    media: calcMedia,
 }
 
-console.log(aluno1.media())
-console.log(aluno2.media())
-console.log(aluno3.media())
+console.log(`Olá, ${aluno1.nome}. Sua primeira nota foi ${aluno1.notas[0]} e a segunda foi ${aluno1.notas[1]}, portanto, sua média final é ${aluno1.media()}`)
+
+console.log(`Olá, ${aluno2.nome}. Sua primeira nota foi ${aluno2.notas[0]} e a segunda foi ${aluno2.notas[1]}, portanto, sua média final é ${aluno2.media()}`)
+
+console.log(`Olá, ${aluno3.nome}. Sua primeira nota foi ${aluno3.notas[0]} e a segunda foi ${aluno3.notas[1]}, portanto, sua média final é ${aluno3.media()}`)
 
 
 // Aqui ja vemos que a function foi invocada e o 'this' fez referência ao local onde ele foi chamado. Portanto, caso eu precise mudar meu algoritmo, basta eu mudar uma única vez lá na função e assim, meu código também ficou bem mais 'limpo'!
