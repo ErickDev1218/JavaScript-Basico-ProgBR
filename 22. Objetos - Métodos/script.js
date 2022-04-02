@@ -97,3 +97,20 @@ console.log(`Olá, ${aluno3.nome}. Sua primeira nota foi ${aluno3.notas[0]} e a 
 
 
 // Aqui ja vemos que a function foi invocada e o 'this' fez referência ao local onde ele foi chamado. Portanto, caso eu precise mudar meu algoritmo, basta eu mudar uma única vez lá na função e assim, meu código também ficou bem mais 'limpo'!
+
+
+// Agora um exemplo para praticar.
+
+
+var a = function (){
+    return (this.n[0] + this.n[1]) /2
+}
+
+
+var b = {
+    nome:"Erick",
+    n:[6,10],
+    media: a
+}
+
+console.log(`Olá, ${b.nome}. Sua média final é ${b.media()}`)
